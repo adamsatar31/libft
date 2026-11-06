@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:34:29 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/06 17:50:07 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/06 20:01:32 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	while(i < n)
 	{
 		ptr[i] = (unsigned char)c;
-		i++
+		i++;
 	}
 	return (s);
 }
