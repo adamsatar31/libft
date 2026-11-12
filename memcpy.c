@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 17:37:24 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/06 20:12:57 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/11 21:55:54 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*s;
 	size_t			i;
 	
+	if (!dest && !src)
+		return (Null),
 	d = (unsigned char*)dest;
 	s = (const unsigned char*)src;
 	i = 0;
