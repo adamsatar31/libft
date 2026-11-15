@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 15:07:37 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/13 16:18:05 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/14 12:55:43 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == (char)c)
-			last = *s;
+			last = s;
 		s++;
 	}
 	if ((char)c == '\0')
