@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strnstr.c                                          :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 20:34:57 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/14 15:38:40 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/16 21:45:56 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ char *strnstr(const char *big, const char *little, size_t len)
 	while (i < len && big[i])
 	{
 		j = 0;
-		while ( && big[i] == little[i])
-		{
-		j++;
-		if (litte[i])
+		while (i + j < len && little[j] && big[i + j] == little[j])
+			j++;
+		if (litte[j] == '\0')
 			return ((char *)(big + i));
+		i++;
+	}
+	return (NULL);
 }

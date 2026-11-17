@@ -7,7 +7,13 @@ char *strdup(const char *s);
 
 	i = 0;
 	copy = malloc(sizeof(char) * (strlen(s) + 1));
-	if (copy)
+	if (!copy)
 		return (NULL);
-	
+	while (s[i])
+	{
+		copy[i] = s[i];
+		i++;
+	}
+	copy[i] = '\0';
+	return (copy);
 }
