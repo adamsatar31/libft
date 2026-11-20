@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 17:37:24 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/17 00:08:26 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/20 16:24:39 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	d = (unsigned char*)dest;
 	s = (const unsigned char*)src;
 	i = 0;
-	
+
 	while(i < n)
 	{
 		d[i] = s[i];
