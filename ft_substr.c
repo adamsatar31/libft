@@ -16,13 +16,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	slen;
 	size_t	sublen;
-	char	*substring
-	
+	char	*substring;
+
 	if (!s)
-		return(NULL);
-	slen = ft_strlen(s)
+		return (NULL);
+	slen = ft_strlen(s);
 	if (start >= slen)
-		return (ft_strdup(""))
+		return (ft_strdup(""));
 	sublen = slen - start;
 	if (len < sublen)
 		sublen = len;

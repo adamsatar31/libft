@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -20,10 +20,10 @@ char	*ft_strchr(const char *s, int c)
 	while (*s != '\0')
 	{
 		if (*s == ch)
-			return((char *)s);
+			return ((char *)s);
 		s++;
 	}
 	if (ch == '\0')
-		return((char *)s);
+		return ((char *)s);
 	return (NULL);
 }

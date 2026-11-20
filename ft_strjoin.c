@@ -19,13 +19,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*ptr;
 
 	if (!s1 || !s2)
-		return (NULL) ;
+		return (NULL);
 	i = ft_strlen(s1);
 	j = ft_strlen(s2);
 	ptr = malloc(i + j + 1);
 	if (!ptr)
-		return(NULL);
+		return (NULL);
 	ft_strlcpy(ptr, s1, i + 1);
 	ft_strlcat(ptr, s2, i + j + 1);
-	return(ptr) ;
+	return (ptr);
 }

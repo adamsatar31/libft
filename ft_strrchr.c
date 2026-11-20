@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strrchr.c                                          :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -24,6 +24,6 @@ char	*ft_strrchr(const char *s, int c)
 		s++;
 	}
 	if ((char)c == '\0')
-		return((char *)s);
+		return ((char *)s);
 	return ((char *)last);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -15,15 +15,14 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
-	size_t	i;
+	size_t			i;
 
 	ptr = (unsigned char *)s;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		ptr[i] = (unsigned char)c;
 		i++;
 	}
 	return (s);
 }
- 
