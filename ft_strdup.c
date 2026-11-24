@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/20 12:56:38 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/20 12:56:40 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/24 01:49:04 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char *strdup(const char *s);
 {
 	char *copy;
-	int	i;
+	size_t	i;
 
 	i = 0;
 	copy = malloc(sizeof(char) * (strlen(s) + 1));

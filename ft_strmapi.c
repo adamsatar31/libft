@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/20 12:55:52 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/20 15:44:52 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/24 01:45:55 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char const	*ptr;
+	char	*ptr;
 	unsigned	int;
 
 	i = 0;
