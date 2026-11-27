@@ -77,3 +77,23 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill_words(arr, s, c));
 }
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "ft_memcpy.c"
+
+int	main(void)
+{
+
+	char arr[]="asadugd";
+	char* result[] = ft_split(arr, 'c');
+	int i = 0;
+	int count = 0;
+	while(result[i])
+	{
+		count++;
+		printf("%s", result[i]);
+	}
+	free_all(result, count);
+	return (0);
+}

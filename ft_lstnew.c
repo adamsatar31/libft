@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/26 17:34:27 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/26 21:53:30 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/27 19:32:58 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,4 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+

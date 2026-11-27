@@ -6,7 +6,7 @@
 /*   By: asatar <asatar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/26 19:07:05 by asatar            #+#    #+#             */
-/*   Updated: 2026/11/26 19:07:12 by asatar           ###   ########.fr       */
+/*   Updated: 2026/11/27 21:09:31 by asatar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	
+	if (!f)
+	return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
